@@ -1,0 +1,8 @@
+Usage:
+./rand.out -t [TEMPLATE INPUT FILE] -n [NUM OF SEQ] -o [OUTPUT FILE]
+
+! The line number of the TEMPLATE should be more than 2*n, which means it should contain more sequences than we expect to output.
+
+eg.
+./rand.out -t Mo2015_EXCpos_Ctx_fold1_trainNeg10x.fa -n 100000 -o test.fa
+Runtime ~ 3.2s
