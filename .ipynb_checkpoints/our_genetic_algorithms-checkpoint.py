@@ -2,11 +2,26 @@ from __future__ import print_function, division
 import string
 import numpy as np
 
+# make it like this
+#https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression
+
 def main():
+    
+    # this must be the same order as the one hot encoding!
+    letter_to_index =  {'A':0, 'a':0,
+                        'C':1, 'c':1,
+                        'G':2, 'g':2,
+                        'T':3, 't':3}
+    
+    base_rates = [0.2, 0.3, 0.3, 0.2]
+    assert np.sum(np.asarray(base_rates)) == 1.0
+    exit()
+    
+    
     target_string = "Genetic Algorithm"
     population_size = 100
     mutation_rate = 0.05
-    ga = GeneticAlgorithm(target_string,
+    ga = GeneticAlgorithm_old(target_string,
                                         population_size,
                                         mutation_rate)
 
@@ -31,7 +46,38 @@ def main():
 
     ga.run(iterations=1000)
 
-class GeneticAlgorithm():
+    
+class GeneticAlgorithm(): 
+    def __init__(self, mutation_rate, crossover_rate, crossover_length, base_rates):
+        
+        
+        self.mutation_rate = mutation_rate
+        self.crossover_rate = crossover_rate
+        self.crossover_length = crossover_length
+        
+        self.base_rates = base_rates # list assumed to correspond to order of one hot encoding
+        
+    def _mutate(self, sequences):
+        
+        """ Randomly change the individual's characters with probability
+        self.mutation_rate """
+        
+        ### get N X length of sequence binary random vars
+        ### assume sequences is shape (N,length of sequence, 4)
+        ### 1 at coordinate (x,y) means mutate sequence x at base y
+        mutate_yesno = np.random.choice([0, 1], size=sequences.shape[0:2], p=[1-mutation_rate, mutation_rate])
+        
+        ### which_base is the set of bases to mutate to
+        ### if the 
+        which_base = np.random.choice(4, sequences.shape[0:2], p=[0.1, 0, 0.3, 0.6, 0])
+        for j in range(len(sequence)):
+            # Make change with probability mutation_rate
+            if np.random.random() < self.mutation_rate:
+                sequence[j] = np.random.choice(self.letters)
+        # Return mutated individual as string
+        return "".join(individual)
+    
+class GeneticAlgorithm_old():
     """An implementation of a Genetic Algorithm which will try to produce the user
     specified target string.
     Parameters:
