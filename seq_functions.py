@@ -25,7 +25,6 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 tf.config.experimental.list_physical_devices('GPU')
 # tf.get_logger().setLevel('WARNING')
 
-
 def onehot_seq(seq):
     letter_to_index =  {'A':0, 'a':0,
                         'C':1, 'c':1,
@@ -36,6 +35,23 @@ def onehot_seq(seq):
         if letter not in ['N','n']:
             to_return[idx,letter_to_index[letter]] = 1
     return to_return
+
+def inverse_onehot_seq(seq):
+    ### input: (length,4)
+    ### output: list, being ['A','C','G','T'] of bases
+    
+    letter_to_index =  {'A':0,
+                        'C':1,
+                        'G':2,
+                        'T':3}
+    index_to_letter = {v: k for k, v in letter_to_index.items()}
+    
+    seq_as_letters = []
+    for base_dex in range(seq.shape[0]):
+        letter = index_to_letter[   np.nonzero(seq[base_dex])[0][0]   ]
+        seq_as_letters.append(letter)
+        
+    return seq_as_letters
 
 def get_fasta_seqs(fasta):
     # read in FASTA files and rev. complement for positive and negatives
@@ -71,11 +87,8 @@ def get_fasta_some_seqs(fasta, nSeq, lenSeq):
 #     #
 #     return x, y
 
-def quick_predict_sequences(model_name, seqs):
+def quick_predict_sequences(model, seqs):
     
-    print('loading model')
-    model = load_model(model_name, compile=False)
-    print('predicting')
     y_pred_score = model.predict(seqs)
     return y_pred_score
 
@@ -96,7 +109,7 @@ def main():
     t0 = time.time()
     print('load 100k sequences')
     # seqs = get_fasta_seqs(full_fasta)
-    some_seqs = get_fasta_some_seqs(full_fasta, 1000, 501)
+    some_seqs = get_fasta_some_seqs(full_fasta, 10000, 501)
 
     t1 = time.time()
     print(str(t1-t0) + ' seconds')
@@ -104,7 +117,10 @@ def main():
     # some_seqs = seqs[0:1000,:,:]
     
     print('load model then predict for 100 sequences')
-    predictions = quick_predict_sequences(model_name, some_seqs)
+    print('loading model')
+    model = load_model(model_name, compile=False)
+    print('predict for 100 sequences')
+    predictions = quick_predict_sequences(model, some_seqs)
     t2 = time.time()
     print(str(t2-t1) + ' seconds')
     

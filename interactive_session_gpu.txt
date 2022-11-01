@@ -1,0 +1,7 @@
+# define this in your bashrc, or just pick a memory and time and run it that way
+# example: srun --mem 10G --time=3:00:00 -p pfen3 --pty /bin/bash
+function inter_pfen3 () {
+
+srun --mem $1G --time=$2:00:00 -p pfen3 --pty /bin/bash
+}
+
