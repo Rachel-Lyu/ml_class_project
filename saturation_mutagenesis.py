@@ -178,21 +178,23 @@ def main():
     else:
         
         iterations = 15
-        num_seqs = 500
-        
-        
+        num_seqs = 200
         
         print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
         model_name = '/home/mleone2/ml_class_project/pretrained_models/Mo2015_EXCpos_Ctx_fold1/Mo2015_EXCpos_Ctx_fold1_OCP_NB1000_NE23_BR0.01_MR0.1_BM0.85_MM0.99_DO0.1.h5'
         path = '/home/mleone2/ml_class_project/results/'
         fasta_name = 'random_seqs_test'
-        full_fasta = path + fasta_name + '.fa' 
+        full_fasta = path + fasta_name + '.fa'
         
         val_model_names = [model_name.replace("fold1", "fold" + str(ii) ) for ii in [2,3,4,5] ]
         val_models = [load_model(name, compile=False) for name in val_model_names ]
 
         seqs_to_mutate = seq_functions.get_fasta_some_seqs(full_fasta, num_seqs, 501)
+        np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations)+'iter_orig_seqs.npy', 
+                seqs_to_mutate, allow_pickle=True)
+        print('made orig seqs')
+        
         #seqs_to_mutate = some_seqs#some_seqs[range(num_seqs),:,:]
         
         print('load model then predict for '+str(num_seqs)+' sequences')
@@ -204,9 +206,7 @@ def main():
         
         t2 = time.time()
         print(str(t2-t1) + ' seconds')
-
         t3 = time.time()
-        
         
         seqs, best_fitness_vals, fitness_vals, val_fitnesses_by_iter = saturation_mutagenesis(seqs_to_mutate,model, iterations, val_models = val_models)
 
@@ -218,9 +218,9 @@ def main():
         np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations) + 'iter_best_fitnesses.npy', best_fitness_vals, allow_pickle=True)
         np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations) + 'iter_val_fitnesses.npy', val_fitnesses_by_iter, allow_pickle=True)
         
-        np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations) +'iter_seqs.npy', val_fitnesses_by_iter, allow_pickle=True)
-        
-        np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations)+'iter_orig_seqs.npy', val_fitnesses_by_iter, allow_pickle=True)
+        np.save('../results/sat_mut_'+ str(num_seqs)+ 'seq_'+ str(iterations) +'iter_seqs.npy', 
+                seqs, allow_pickle=True)
+    
 
         t4 = time.time()
         #print(t4-t3)

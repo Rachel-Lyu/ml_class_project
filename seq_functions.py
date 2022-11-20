@@ -109,7 +109,7 @@ def main():
     t0 = time.time()
     print('load 100k sequences')
     # seqs = get_fasta_seqs(full_fasta)
-    some_seqs = get_fasta_some_seqs(full_fasta, 10000, 501)
+    some_seqs = get_fasta_some_seqs(full_fasta, 1000, 501)
 
     t1 = time.time()
     print(str(t1-t0) + ' seconds')
