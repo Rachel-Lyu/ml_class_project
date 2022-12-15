@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py", line 10, in <module>
+    from tensorflow.python.client import device_lib 
+ImportError: No module named tensorflow.python.client

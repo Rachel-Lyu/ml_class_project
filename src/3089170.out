@@ -1,0 +1,145 @@
+start at 2022-12-05 15:03:30
+
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 18338137497808200027
+, name: "/device:XLA_CPU:0"
+device_type: "XLA_CPU"
+memory_limit: 17179869184
+locality {
+}
+incarnation: 895390363455338798
+physical_device_desc: "device: XLA_CPU device"
+]
+yes
+
+scope_name Discriminator
+scope_name Generator
+Loading files from /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../data/protein/our_data
+Found 1 file(s)
+[-1]
+Loading process will use 48 CPUs
+Non saturating loss
+********** Model **********
+All parameters: 59022521.0 (out of them 58988519 are trainable)
+Discriminator 29731576 trainable parameters. Generator trainable parameters 29256943
+********** Discriminator **********
+acid_embeddings:0                       | (4, 30)             | 120
+sn_d_block0/conv1/w:0                   | (1, 3, 30, 60)      | 5400
+sn_d_block0/conv1/biases:0              | (60,)               | 60
+sn_d_block0/conv2/w:0                   | (1, 3, 60, 60)      | 10800
+sn_d_block0/conv2/biases:0              | (60,)               | 60
+sn_d_block0/conv3/w:0                   | (1, 3, 30, 60)      | 5400
+sn_d_block0/conv3/biases:0              | (60,)               | 60
+attention/sn_conv_f/w:0                 | (1, 1, 60, 7)       | 420
+attention/sn_conv_f/biases:0            | (7,)                | 7
+attention/sn_conv_g/w:0                 | (1, 1, 60, 7)       | 420
+attention/sn_conv_g/biases:0            | (7,)                | 7
+attention/sn_conv_h/w:0                 | (1, 1, 60, 60)      | 3600
+attention/sn_conv_h/biases:0            | (60,)               | 60
+attention/attention_multiplier:0        | (1,)                | 1
+sn_d_block1/conv1/w:0                   | (1, 3, 60, 120)     | 21600
+sn_d_block1/conv1/biases:0              | (120,)              | 120
+sn_d_block1/conv2/w:0                   | (1, 3, 120, 120)    | 43200
+sn_d_block1/conv2/biases:0              | (120,)              | 120
+sn_d_block1/conv3/w:0                   | (1, 3, 60, 120)     | 21600
+sn_d_block1/conv3/biases:0              | (120,)              | 120
+sn_d_block2/conv1/w:0                   | (1, 3, 120, 240)    | 86400
+sn_d_block2/conv1/biases:0              | (240,)              | 240
+sn_d_block2/conv2/w:0                   | (1, 3, 240, 240)    | 172800
+sn_d_block2/conv2/biases:0              | (240,)              | 240
+sn_d_block2/conv3/w:0                   | (1, 3, 120, 240)    | 86400
+sn_d_block2/conv3/biases:0              | (240,)              | 240
+sn_d_block3/conv1/w:0                   | (1, 3, 240, 480)    | 345600
+sn_d_block3/conv1/biases:0              | (480,)              | 480
+sn_d_block3/conv2/w:0                   | (1, 3, 480, 480)    | 691200
+sn_d_block3/conv2/biases:0              | (480,)              | 480
+sn_d_block3/conv3/w:0                   | (1, 3, 240, 480)    | 345600
+sn_d_block3/conv3/biases:0              | (480,)              | 480
+sn_d_block4/conv1/w:0                   | (1, 3, 480, 960)    | 1382400
+sn_d_block4/conv1/biases:0              | (960,)              | 960
+sn_d_block4/conv2/w:0                   | (1, 3, 960, 960)    | 2764800
+sn_d_block4/conv2/biases:0              | (960,)              | 960
+sn_d_block4/conv3/w:0                   | (1, 3, 480, 960)    | 1382400
+sn_d_block4/conv3/biases:0              | (960,)              | 960
+sn_d_block5/conv1/w:0                   | (1, 3, 960, 1920)   | 5529600
+sn_d_block5/conv1/biases:0              | (1920,)             | 1920
+sn_d_block5/conv2/w:0                   | (1, 3, 1920, 1920)  | 11059200
+sn_d_block5/conv2/biases:0              | (1920,)             | 1920
+sn_d_block5/conv3/w:0                   | (1, 3, 960, 1920)   | 5529600
+sn_d_block5/conv3/biases:0              | (1920,)             | 1920
+final_conv/w:0                          | (1, 1, 1921, 120)   | 230520
+final_conv/biases:0                     | (120,)              | 120
+d_sn_linear/Matrix:0                    | (960, 1)            | 960
+d_sn_linear/bias:0                      | (1,)                | 1
+********** Generator **********
+noise_linear/Matrix:0                   | (128, 11264)        | 1441792
+noise_linear/bias:0                     | (11264,)            | 11264
+sn_g_block6/deconv1/w:0                 | (1, 3, 1408, 1408)  | 5947392
+sn_g_block6/deconv1/biases:0            | (1408,)             | 1408
+sn_g_block6/conv2/w:0                   | (1, 3, 1408, 1408)  | 5947392
+sn_g_block6/conv2/biases:0              | (1408,)             | 1408
+sn_g_block6/deconv3/w:0                 | (1, 3, 1408, 1408)  | 5947392
+sn_g_block6/deconv3/biases:0            | (1408,)             | 1408
+sn_g_block5/deconv1/w:0                 | (1, 3, 704, 1408)   | 2973696
+sn_g_block5/deconv1/biases:0            | (704,)              | 704
+sn_g_block5/conv2/w:0                   | (1, 3, 704, 704)    | 1486848
+sn_g_block5/conv2/biases:0              | (704,)              | 704
+sn_g_block5/deconv3/w:0                 | (1, 3, 704, 1408)   | 2973696
+sn_g_block5/deconv3/biases:0            | (704,)              | 704
+sn_g_block4/deconv1/w:0                 | (1, 3, 352, 704)    | 743424
+sn_g_block4/deconv1/biases:0            | (352,)              | 352
+sn_g_block4/conv2/w:0                   | (1, 3, 352, 352)    | 371712
+sn_g_block4/conv2/biases:0              | (352,)              | 352
+sn_g_block4/deconv3/w:0                 | (1, 3, 352, 704)    | 743424
+sn_g_block4/deconv3/biases:0            | (352,)              | 352
+sn_g_block3/deconv1/w:0                 | (1, 3, 176, 352)    | 185856
+sn_g_block3/deconv1/biases:0            | (176,)              | 176
+sn_g_block3/conv2/w:0                   | (1, 3, 176, 176)    | 92928
+sn_g_block3/conv2/biases:0              | (176,)              | 176
+sn_g_block3/deconv3/w:0                 | (1, 3, 176, 352)    | 185856
+sn_g_block3/deconv3/biases:0            | (176,)              | 176
+sn_g_block2/deconv1/w:0                 | (1, 3, 88, 176)     | 46464
+sn_g_block2/deconv1/biases:0            | (88,)               | 88
+sn_g_block2/conv2/w:0                   | (1, 3, 88, 88)      | 23232
+sn_g_block2/conv2/biases:0              | (88,)               | 88
+sn_g_block2/deconv3/w:0                 | (1, 3, 88, 176)     | 46464
+sn_g_block2/deconv3/biases:0            | (88,)               | 88
+attention/sn_conv_f/w:0                 | (1, 1, 88, 9)       | 792
+attention/sn_conv_f/biases:0            | (9,)                | 9
+attention/sn_conv_g/w:0                 | (1, 1, 88, 9)       | 792
+attention/sn_conv_g/biases:0            | (9,)                | 9
+attention/sn_conv_h/w:0                 | (1, 1, 88, 88)      | 7744
+attention/sn_conv_h/biases:0            | (88,)               | 88
+attention/attention_multiplier:0        | (1,)                | 1
+sn_g_block1/deconv1/w:0                 | (1, 3, 88, 88)      | 23232
+sn_g_block1/deconv1/biases:0            | (88,)               | 88
+sn_g_block1/conv2/w:0                   | (1, 3, 88, 88)      | 23232
+sn_g_block1/conv2/biases:0              | (88,)               | 88
+sn_g_block1/deconv3/w:0                 | (1, 3, 88, 88)      | 23232
+sn_g_block1/deconv3/biases:0            | (88,)               | 88
+g_bn/gamma:0                            | (88,)               | 88
+g_bn/beta:0                             | (88,)               | 88
+last_conv/w:0                           | (1, 1, 88, 4)       | 352
+last_conv/biases:0                      | (4,)                | 4
+Running model [1m[31msngan[0m with [1m[31mprotein/our_data[0m data set
+Batch size: [1m64[0m
+Learning rates used: discriminator [1m0.0001[0m generator [1m0.0001[0m (Beta: [1m0.0[0m)
+Discriminator [1m44[0m dim. Generator [1m30[0m dim
+D_step: [1m1[0m G step: [1m1[0m
+
+[1m!!! STARTING TRAINING !!![0m
+
+Max value: 0.25000 | Min value: 0.25000 D Score: -0.02873 | Repeating AA: 16.0
+Max value: 1.00000 | Min value: 0.00000 D Score: -0.01570 | Repeating AA: 17.9
+Max value: 1.00000 | Min value: 0.00000 D Score: -0.01015 | Repeating AA: 16.4
+Max value: 1.00000 | Min value: 0.00000 D Score: 0.35419 | Repeating AA: 17.9
+Max value: 1.00000 | Min value: 0.00000 D Score: -0.03975 | Repeating AA: 17.1
+Max value: 1.00000 | Min value: 0.00000 D Score: 0.06692 | Repeating AA: 17.9
+Max value: 1.00000 | Min value: 0.00000 D Score: 0.02486 | Repeating AA: 17.0
+Max value: 1.00000 | Min value: 0.00000 D Score: 0.12279 | Repeating AA: 17.9
+finish at 2022-12-07 08:28:03
+

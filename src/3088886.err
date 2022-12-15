@@ -1,0 +1,773 @@
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+2022-12-05 02:18:23.129200: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2022-12-05 02:18:23.145378: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2022-12-05 02:18:23.145464: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a6c0ded840 executing computations on platform Host. Devices:
+2022-12-05 02:18:23.145473: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2022-12-05 02:18:23.146540: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi/lib
+2022-12-05 02:18:23.146554: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2022-12-05 02:18:23.146568: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (compute-0-33.local): /proc/driver/nvidia/version does not exist
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:22: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:78: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:29: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W1205 02:18:44.125936 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:29: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:224: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W1205 02:18:44.127045 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:224: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:225: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W1205 02:18:44.128947 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:225: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Results will be saved in: /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv
+I1205 02:18:44.129017 139816683706176 documentation.py:225] Results will be saved in: /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:38: The name tf.logging.warn is deprecated. Please use tf.compat.v1.logging.warn instead.
+
+W1205 02:18:44.132714 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:38: The name tf.logging.warn is deprecated. Please use tf.compat.v1.logging.warn instead.
+
+WARNING:tensorflow:Reaction file could not be loaded: [Errno 2] No such file or directory: '/home/mleone2/ml_class_project/ProteinGAN/src/gan/../../data/protein/our_data/train_reactions.npy'
+W1205 02:18:44.132800 139816683706176 protein.py:38] Reaction file could not be loaded: [Errno 2] No such file or directory: '/home/mleone2/ml_class_project/ProteinGAN/src/gan/../../data/protein/our_data/train_reactions.npy'
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:16: The name tf.train.create_global_step is deprecated. Please use tf.compat.v1.train.create_global_step instead.
+
+W1205 02:18:44.134253 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:16: The name tf.train.create_global_step is deprecated. Please use tf.compat.v1.train.create_global_step instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:510: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1205 02:18:44.137374 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:510: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:30: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W1205 02:18:44.137668 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:30: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:30: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W1205 02:18:44.138764 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:30: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:112: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W1205 02:18:44.165384 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:112: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W1205 02:18:44.165532 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:116: The name tf.FixedLenSequenceFeature is deprecated. Please use tf.io.FixedLenSequenceFeature instead.
+
+W1205 02:18:44.165627 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:116: The name tf.FixedLenSequenceFeature is deprecated. Please use tf.io.FixedLenSequenceFeature instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:53: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W1205 02:18:44.194028 139816683706176 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:53: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:23: The name tf.logging.log is deprecated. Please use tf.compat.v1.logging.log instead.
+
+W1205 02:18:44.242001 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:23: The name tf.logging.log is deprecated. Please use tf.compat.v1.logging.log instead.
+
+INFO:tensorflow:Generator: (512, 1, 8, 1408)
+I1205 02:18:44.242120 139816683706176 base_model.py:23] Generator: (512, 1, 8, 1408)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/generator.py:56: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+W1205 02:18:44.332900 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/generator.py:56: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+INFO:tensorflow:Generator: (512, 1, 16, 1408)
+I1205 02:18:44.333937 139816683706176 base_model.py:23] Generator: (512, 1, 16, 1408)
+INFO:tensorflow:Generator: (512, 1, 32, 704)
+I1205 02:18:44.423876 139816683706176 base_model.py:23] Generator: (512, 1, 32, 704)
+INFO:tensorflow:Generator: (512, 1, 64, 352)
+I1205 02:18:44.513479 139816683706176 base_model.py:23] Generator: (512, 1, 64, 352)
+INFO:tensorflow:Generator: (512, 1, 128, 176)
+I1205 02:18:44.681166 139816683706176 base_model.py:23] Generator: (512, 1, 128, 176)
+INFO:tensorflow:Generator: (512, 1, 256, 88)
+I1205 02:18:44.862907 139816683706176 base_model.py:23] Generator: (512, 1, 256, 88)
+WARNING:tensorflow:From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W1205 02:18:44.993367 139816683706176 deprecation.py:323] From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Generator: output (512, 1, 512, 4)
+I1205 02:18:45.038155 139816683706176 base_model.py:23] Generator: output (512, 1, 512, 4)
+INFO:tensorflow:Discriminator
+I1205 02:18:45.039159 139816683706176 discriminator.py:20] Discriminator
+INFO:tensorflow:Discriminator: (512, 1, 512, 30)
+I1205 02:18:45.068547 139816683706176 base_model.py:23] Discriminator: (512, 1, 512, 30)
+INFO:tensorflow:Discriminator: (512, 1, 256, 60)
+I1205 02:18:45.248133 139816683706176 base_model.py:23] Discriminator: (512, 1, 256, 60)
+INFO:tensorflow:Discriminator: (512, 1, 128, 120)
+I1205 02:18:45.336786 139816683706176 base_model.py:23] Discriminator: (512, 1, 128, 120)
+INFO:tensorflow:Discriminator: (512, 1, 64, 240)
+I1205 02:18:45.428945 139816683706176 base_model.py:23] Discriminator: (512, 1, 64, 240)
+INFO:tensorflow:Discriminator: (512, 1, 32, 480)
+I1205 02:18:45.518419 139816683706176 base_model.py:23] Discriminator: (512, 1, 32, 480)
+INFO:tensorflow:Discriminator: (512, 1, 16, 960)
+I1205 02:18:45.712642 139816683706176 base_model.py:23] Discriminator: (512, 1, 16, 960)
+INFO:tensorflow:Discriminator: (512, 1, 8, 120)
+I1205 02:18:46.097061 139816683706176 base_model.py:23] Discriminator: (512, 1, 8, 120)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:39: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+W1205 02:18:46.097247 139816683706176 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:39: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:40: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W1205 02:18:46.304449 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:40: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:41: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+W1205 02:18:46.305552 139816683706176 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:41: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+INFO:tensorflow:Discriminator
+I1205 02:18:46.308385 139816683706176 discriminator.py:20] Discriminator
+INFO:tensorflow:Discriminator: (512, 1, 512, 30)
+I1205 02:18:46.327924 139816683706176 base_model.py:23] Discriminator: (512, 1, 512, 30)
+INFO:tensorflow:Discriminator: (512, 1, 256, 60)
+I1205 02:18:46.431895 139816683706176 base_model.py:23] Discriminator: (512, 1, 256, 60)
+INFO:tensorflow:Discriminator: (512, 1, 128, 120)
+I1205 02:18:46.483207 139816683706176 base_model.py:23] Discriminator: (512, 1, 128, 120)
+INFO:tensorflow:Discriminator: (512, 1, 64, 240)
+I1205 02:18:46.534263 139816683706176 base_model.py:23] Discriminator: (512, 1, 64, 240)
+INFO:tensorflow:Discriminator: (512, 1, 32, 480)
+I1205 02:18:46.585232 139816683706176 base_model.py:23] Discriminator: (512, 1, 32, 480)
+INFO:tensorflow:Discriminator: (512, 1, 16, 960)
+I1205 02:18:46.636312 139816683706176 base_model.py:23] Discriminator: (512, 1, 16, 960)
+INFO:tensorflow:Discriminator: (512, 1, 8, 120)
+I1205 02:18:46.720708 139816683706176 base_model.py:23] Discriminator: (512, 1, 8, 120)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:113: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W1205 02:18:46.755970 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:113: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:152: The name tf.summary.text is deprecated. Please use tf.compat.v1.summary.text instead.
+
+W1205 02:18:46.764861 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:152: The name tf.summary.text is deprecated. Please use tf.compat.v1.summary.text instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:28: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W1205 02:18:46.863098 139816683706176 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:28: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:89: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W1205 02:18:46.983629 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:89: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:87: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+W1205 02:18:56.008367 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:87: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+INFO:tensorflow:Saved meta data in /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv
+I1205 02:18:56.636539 139816683706176 documentation.py:103] Saved meta data in /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/models.py:52: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+W1205 02:18:56.636729 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/models.py:52: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:58: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W1205 02:18:56.636970 139816683706176 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:58: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I1205 02:18:56.637084 139816683706176 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I1205 02:18:57.216265 139816683706176 monitored_session.py:240] Graph was finalized.
+2022-12-05 02:18:59.028865: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I1205 02:19:00.598995 139816683706176 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I1205 02:19:00.788491 139816683706176 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 02:19:06.942578 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+Temperature 1e+06
+fake [1 1 1 1 3 0 1 1 3 0 2 2 0 1 3 0 1 0 3 1 3 0 0 1 2 3 0 2 3 2 3 0 2 2 0 1 0 3 0 0 3 1 0 2 3 1 0 2 3 0 0 1 3 2 1 0 3 0 1 3 0 0 0 2 1 0 0 3 0 0 0 0 0 1 0 2 0 0 0 0 2 0 0 2 2 2 0 0 3 2 2 2 1 0 0 0 0 3 2 3 0 1 0 0 3 0 3 3 2 0 0 0 2 0 1 1 3 1 3 2 3 2 2 3 2 2 3 0 1 2 0 0 1 1 0 2 2 1 3 2 3 1 3 3 2 2 3 3 0 1 1 1 1 3 1 2 0 2 1 1 3 2 3 2 0 0 2 3 3 1 0 2 3 2 2 2 3 1 1 1 3 3 2 2 0 3 1 1 0 1 3 3 0 0 0 0 0 2 0 2 3 0 0 2 1 1 1 2 3 2 0 3 0 1 0 0 1 3 0 0 1 1 2 3 2 0 3 3 2 3 0 1 0 1 1 1 2 0 0 1 0 0 0 2 0 2 2 2 1 0 3 1 0 2 2 0 3 3 0 2 1 2 1 0 0 2 2 0 1 0 1 0 2 0 2 1 2 1 2 1 0 0 0 1 2 1 3 3 0 2 1 2 0 3 1 2 3 3 1 1 1 2 2 2 2 3 1 3 3 3 2 0 0 3 2 2 2 2 0 2 1 2 0 3 1 3 1 3 3 0 0 3 2 3 3 3 0 3 3 0 0 2 2 1 1 3 2 2 3 1 3 2 0 2 3 3 2 3 3 0 3 1 1 3 3 3 0 2 0 3 0 2 0 3 0 0 3 3 2 0 3 2 1 2 2 0 1 2 3 0 2 0 1 3 0 3 2 1 2 1 0 1 0 1 1 0 3 2 1 3 0 0 1 2 3 1 0 2 0 1 2 2 0 1 2 1 3 1 1 1 0 1 2 0 0 1 0 2 3 1 0 3 0 1 2 2 3 0 3 0 1 3 3 2 2 0 2 3 3 1 3 0 3 2 1 0 3 2 1 2 3 1 3 0 1 3 2 2 2 0 3 0 0 3 2 2 3 3 0 3 2 2 0 0 0 0 1 3 0 1 3 0 3 0 3 0 2 1 1 0 3 0]
+r1_penalty 0.000718493131
+INFO:tensorflow:Running Local Blast thread for step 1
+INFO:tensorflow: Step = 1, Dev (Fake) = 2.9554175e-07, Dev (Real) = 0.42058158, Loss (Disc) = 1.3775082, Loss (Gen) = 0.68413043
+I1205 02:31:21.125894 139813063751424 local_blast_summary.py:18] Running Local Blast thread for step 1
+I1205 02:31:21.126324 139816683706176 basic_session_run_hooks.py:262]  Step = 1, Dev (Fake) = 2.9554175e-07, Dev (Real) = 0.42058158, Loss (Disc) = 1.3775082, Loss (Gen) = 0.68413043
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 938, in format
+    return prefix + super(PythonFormatter, self).format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1390, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 901, in handle
+    return self._current_handler.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 838, in emit
+    super(PythonHandler, self).emit(record)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+INFO:tensorflow:Saving checkpoints for 2 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 02:41:34.423748 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 2 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 4 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 03:02:10.431564 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 4 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 6 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 03:22:37.972192 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 6 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 8 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 03:43:58.896782 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 8 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 10 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 04:04:29.732211 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 10 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+WARNING:tensorflow:From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W1205 04:04:32.945712 139816683706176 deprecation.py:323] From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:Saving checkpoints for 12 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 04:25:01.888812 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 12 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 14 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 04:45:36.079631 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 14 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 16 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 05:06:28.962089 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 16 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 18 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 05:27:00.919091 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 18 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 20 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 05:47:36.664635 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 20 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 22 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 06:08:12.594544 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 22 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 24 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 06:28:46.113543 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 24 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 26 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 06:49:14.993678 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 26 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 28 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 07:09:50.182372 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 28 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 30 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 07:30:15.698155 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 30 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 32 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 07:50:43.423005 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 32 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 34 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 08:11:11.601485 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 34 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 36 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 08:31:40.270670 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 36 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 38 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 08:52:13.155653 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 38 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 40 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 09:12:47.842790 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 40 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 42 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 09:33:18.152677 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 42 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 44 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 09:53:44.362630 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 44 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 46 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 10:14:13.137653 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 46 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 48 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 10:36:13.670266 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 48 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 50 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 10:58:34.581688 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 50 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 52 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 11:19:01.832283 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 52 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 54 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 11:39:34.594218 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 54 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 56 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 12:00:03.413486 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 56 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 58 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 12:20:40.628526 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 58 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 60 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 12:41:11.099629 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 60 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 62 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 13:01:37.270344 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 62 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 64 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 13:22:03.434102 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 64 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 66 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 13:42:31.765447 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 66 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 68 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 14:03:03.855083 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 68 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 70 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 14:23:29.081539 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 70 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 72 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 14:43:53.447517 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 72 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 74 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 15:04:26.525059 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 74 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 76 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 15:39:45.973541 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 76 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 78 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 16:15:38.891979 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 78 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 80 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 16:51:31.895860 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 80 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 82 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 17:27:27.020555 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 82 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 84 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 18:03:15.235427 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 84 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 86 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 18:39:03.514470 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 86 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 88 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 19:15:57.172141 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 88 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 90 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 19:52:26.130992 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 90 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 92 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 20:29:43.178717 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 92 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 94 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 21:08:18.862746 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 94 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 96 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 21:47:11.987213 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 96 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 98 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 22:25:53.363802 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 98 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 100 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 23:04:17.853853 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 100 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.00133097
+I1205 23:23:34.431298 139816683706176 basic_session_run_hooks.py:692] global_step/sec: 0.00133097
+INFO:tensorflow:Saving checkpoints for 102 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1205 23:42:43.945182 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 102 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 104 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 00:21:15.355604 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 104 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 106 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 00:59:53.537911 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 106 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 108 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 01:38:17.343178 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 108 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 110 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 02:16:49.434731 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 110 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 112 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 02:55:18.706914 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 112 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 114 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 03:33:39.285276 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 114 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 116 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 04:12:04.519762 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 116 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 118 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 04:50:25.793746 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 118 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 120 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 05:29:16.162021 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 120 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 122 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 06:08:17.030185 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 122 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 124 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 06:47:07.689849 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 124 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 126 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 07:26:24.450385 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 126 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 128 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 08:05:32.571597 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 128 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 130 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 08:44:27.936260 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 130 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 132 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 09:23:18.246029 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 132 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 134 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 10:00:24.083137 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 134 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 136 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 10:38:29.019434 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 136 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 138 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 11:16:33.923643 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 138 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 140 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 11:55:22.704196 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 140 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 142 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 12:33:55.090680 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 142 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 144 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 13:12:32.411637 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 144 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 146 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 13:51:47.599449 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 146 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 148 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 14:30:41.534137 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 148 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 150 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 15:09:26.829817 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 150 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 152 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 15:48:13.107848 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 152 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 154 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 16:27:06.111289 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 154 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 156 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 17:06:00.080648 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 156 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 158 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 17:44:36.719989 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 158 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 160 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 18:23:34.544823 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 160 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 162 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 19:02:27.061705 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 162 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 164 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 19:41:07.885608 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 164 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 166 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 20:19:59.502571 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 166 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 168 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 20:59:38.041252 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 168 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 169 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 21:20:00.336623 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 169 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 170 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 21:40:18.623264 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 170 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 171 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 22:00:41.062685 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 171 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 172 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 22:21:01.771329 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 172 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 173 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 22:41:24.680593 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 173 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 174 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 23:02:03.997778 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 174 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 175 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 23:22:22.443457 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 175 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 176 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1206 23:42:55.533509 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 176 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 177 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 00:03:21.539714 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 177 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 178 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 00:23:50.478292 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 178 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 179 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 00:44:15.947042 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 179 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 180 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 01:04:44.448435 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 180 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 181 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 01:25:11.180549 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 181 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 183 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 02:04:22.221459 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 183 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 185 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 02:43:31.986693 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 185 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 187 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 03:22:43.755246 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 187 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 189 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 04:01:40.835815 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 189 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 191 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 04:40:33.699217 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 191 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 193 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 05:19:33.111543 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 193 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 195 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 05:58:37.566186 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 195 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 197 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 06:37:27.217331 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 197 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 199 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 07:16:24.119202 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 199 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.000853817
+I1207 07:55:35.516971 139816683706176 basic_session_run_hooks.py:692] global_step/sec: 0.000853817
+INFO:tensorflow:Saving checkpoints for 201 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 07:55:36.096338 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 201 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 203 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 08:31:44.561107 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 203 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 205 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 08:54:43.610209 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 205 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 207 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 09:17:43.676125 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 207 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 209 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 09:41:03.713686 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 209 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 211 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 10:04:43.266308 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 211 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 213 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 10:28:03.722967 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 213 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 215 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 10:51:20.013642 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 215 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 217 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 11:14:40.258239 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 217 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 219 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 11:38:14.103215 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 219 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 221 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 12:01:40.413994 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 221 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 223 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 12:25:01.811201 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 223 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 225 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 12:48:25.171088 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 225 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 227 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 13:11:43.007112 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 227 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 229 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 13:34:51.422749 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 229 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 231 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 13:58:02.780044 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 231 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 233 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 14:21:12.753507 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 233 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 235 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 14:44:20.734537 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 235 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 237 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 15:07:33.240187 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 237 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 239 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 15:30:46.507950 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 239 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 241 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 15:53:58.350346 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 241 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 243 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 16:17:08.981295 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 243 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 245 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 16:40:29.005534 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 245 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 245 vs previous value: 245. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1207 16:52:13.793085 139816683706176 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 245 vs previous value: 245. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 247 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 17:03:54.424094 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 247 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 249 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 17:27:13.879255 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 249 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 251 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 17:50:19.127484 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 251 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 253 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 18:12:30.676851 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 253 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 255 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 18:33:11.838562 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 255 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 257 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 18:53:54.527711 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 257 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 259 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 19:14:42.885339 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 259 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 261 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 19:35:36.674786 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 261 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 263 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 19:56:17.611812 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 263 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 265 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 20:17:08.578040 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 265 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 267 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 20:37:54.376248 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 267 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 269 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 20:58:45.254071 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 269 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 271 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 21:19:39.198400 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 271 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 273 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 21:40:29.517173 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 273 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 275 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 22:01:22.341846 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 275 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 277 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 22:22:17.430641 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 277 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 279 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 22:43:06.765375 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 279 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 281 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 23:03:50.721232 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 281 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 283 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 23:25:27.794543 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 283 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 285 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1207 23:49:59.850430 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 285 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 287 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 00:13:14.008284 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 287 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 289 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 00:38:43.207293 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 289 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 291 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 01:04:09.265760 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 291 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 293 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 01:30:39.187865 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 293 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 295 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 01:57:01.623590 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 295 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 297 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 02:23:07.854350 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 297 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 299 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 02:49:21.098134 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 299 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.192611143
+fake [0 0 0 0 0 0 0 1 0 1 1 2 1 0 1 0 2 1 2 0 3 0 1 2 2 0 0 3 0 0 0 0 2 0 2 2 3 0 3 3 2 2 1 2 3 1 3 2 3 0 2 1 0 1 1 0 3 0 2 0 0 0 2 0 3 1 2 0 3 2 2 1 0 3 1 1 1 2 1 1 0 0 2 2 2 2 1 1 2 1 2 0 3 0 1 3 1 1 2 3 0 0 0 1 1 0 1 0 3 2 1 1 2 0 2 2 2 0 1 2 2 0 2 1 3 0 0 0 3 0 0 2 2 0 1 2 1 2 2 1 2 0 0 0 0 2 0 2 3 0 2 1 0 3 2 1 0 0 2 0 2 2 3 0 2 0 2 1 2 1 2 1 3 0 0 2 2 0 2 2 2 0 2 1 2 1 2 0 2 0 1 0 2 3 3 0 3 0 2 3 3 3 0 2 2 0 1 0 2 2 2 0 2 0 1 0 3 0 2 0 0 0 0 0 2 0 2 0 3 0 1 1 2 0 0 0 2 1 3 1 2 0 2 0 2 0 2 1 1 1 2 0 3 0 0 0 3 0 2 0 3 3 3 0 2 3 1 2 2 3 0 1 2 0 0 2 3 0 1 2 2 0 0 2 0 0 2 0 2 0 3 0 2 3 1 0 0 3 0 1 2 1 1 0 2 1 2 2 0 1 1 2 1 3 2 0 3 1 0 1 3 3 0 0 2 3 1 1 0 2 3 2 0 1 3 2 1 3 0 1 1 1 3 0 0 1 2 0 0 3 0 1 1 1 1 2 0 3 0 3 1 1 2 1 1 1 1 1 2 2 1 0 1 3 0 2 1 3 2 0 3 3 1 1 3 0 0 0 0 2 0 1 1 1 2 1 1 0 2 1 1 0 2 0 1 2 0 3 1 1 3 3 3 0 2 0 3 1 1 0 2 2 2 0 1 0 3 0 2 1 1 0 2 0 2 2 2 0 1 1 1 0 2 0 3 0 1 1 1 0 0 0 0 0 2 3 2 2 0 0 0 0 0 0 2 1 2 1 2 1 1 3 3 0 2 0 2 0 0 2 2 0 0 2 2 0 3 0 2 1 2 1 0 1 2 1 3 1 1 1 3 0 1 1 2 1 0 0 0 0 0 0]
+r1_penalty 0.00702669565
+INFO:tensorflow:global_step/sec: 0.00143217
+I1208 03:19:19.711371 139816683706176 basic_session_run_hooks.py:692] global_step/sec: 0.00143217
+INFO:tensorflow:Saving checkpoints for 301 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 03:19:19.718538 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 301 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow: Step = 301, Dev (Fake) = 0.35417557, Dev (Real) = 0.4208992, Loss (Disc) = 1.3211586, Loss (Gen) = 0.78454304 (262084.283 sec)
+I1208 03:19:25.409064 139816683706176 basic_session_run_hooks.py:260]  Step = 301, Dev (Fake) = 0.35417557, Dev (Real) = 0.4208992, Loss (Disc) = 1.3211586, Loss (Gen) = 0.78454304 (262084.283 sec)
+INFO:tensorflow:Saving checkpoints for 303 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 03:45:20.652804 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 303 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 305 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 04:11:39.010421 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 305 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 307 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 04:37:26.122261 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 307 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 309 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 05:03:38.203734 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 309 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 311 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 05:30:29.170066 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 311 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 313 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 05:57:26.277312 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 313 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 315 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 06:24:27.405266 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 315 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 317 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 06:50:38.115512 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 317 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 319 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 07:17:19.410542 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 319 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 321 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 07:43:49.740548 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 321 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 323 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 08:10:24.046440 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 323 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 325 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 08:36:54.179304 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 325 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 327 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 09:03:25.877318 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 327 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 329 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 09:29:56.732836 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 329 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 331 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 09:56:30.179553 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 331 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 333 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 10:22:59.941230 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 333 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 335 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 10:49:20.455651 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 335 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 337 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 11:14:13.498360 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 337 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 339 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 11:39:12.364281 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 339 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 341 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 12:04:42.971338 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 341 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 343 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 12:29:50.593824 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 343 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 345 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 12:55:00.048865 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 345 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 347 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 13:21:11.153717 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 347 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 349 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 13:47:28.590608 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 349 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 351 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 14:13:54.573634 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 351 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 353 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 14:39:58.509653 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 353 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 355 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 15:05:27.830006 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 355 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 357 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 15:31:47.902911 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 357 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 359 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 15:57:58.672384 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 359 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 361 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 16:23:34.008578 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 361 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 363 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 16:48:46.394267 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 363 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 365 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 17:13:59.594938 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 365 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 367 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 17:38:46.568199 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 367 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 369 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 18:04:04.448699 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 369 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 371 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 18:30:18.205450 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 371 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 373 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 18:56:20.748211 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 373 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 375 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 19:22:30.550070 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 375 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 377 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 19:47:58.395505 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 377 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 379 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 20:12:43.746006 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 379 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 381 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 20:37:55.961495 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 381 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 383 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 21:03:28.611376 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 383 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 385 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 21:29:27.809826 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 385 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 387 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 21:55:22.711404 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 387 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 389 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 22:21:24.850854 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 389 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 391 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 22:47:31.344095 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 391 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 393 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 23:13:32.330908 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 393 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 395 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1208 23:39:32.739180 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 395 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 397 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 00:04:25.715162 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 397 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 399 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 00:30:22.494795 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 399 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.00128505
+I1209 00:56:17.456650 139816683706176 basic_session_run_hooks.py:692] global_step/sec: 0.00128505
+INFO:tensorflow:Saving checkpoints for 401 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 00:56:18.448762 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 401 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 403 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 01:22:39.235868 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 403 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 405 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 01:49:16.419489 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 405 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 407 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+I1209 02:16:23.663000 139816683706176 basic_session_run_hooks.py:606] Saving checkpoints for 407 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=512/d_dim_30_g_dim_44/moh1_run_512_k_3x3_d_1_conv/model.ckpt.
+slurmstepd: error: *** JOB 3088886 ON compute-0-33 CANCELLED AT 2022-12-09T02:17:56 DUE TO TIME LIMIT ***

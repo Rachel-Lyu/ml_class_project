@@ -1,0 +1,768 @@
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+2022-12-06 00:08:54.369379: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2022-12-06 00:08:54.386938: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2022-12-06 00:08:54.387029: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560151559c30 executing computations on platform Host. Devices:
+2022-12-06 00:08:54.387038: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2022-12-06 00:08:54.387876: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi/lib
+2022-12-06 00:08:54.387890: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2022-12-06 00:08:54.387904: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (compute-0-32.local): /proc/driver/nvidia/version does not exist
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:22: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:78: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:29: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W1206 00:09:06.474535 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:29: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:224: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W1206 00:09:06.479677 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:224: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:225: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W1206 00:09:06.484063 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:225: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Results will be saved in: /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv
+I1206 00:09:06.484137 140565849311040 documentation.py:225] Results will be saved in: /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:38: The name tf.logging.warn is deprecated. Please use tf.compat.v1.logging.warn instead.
+
+W1206 00:09:06.488009 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:38: The name tf.logging.warn is deprecated. Please use tf.compat.v1.logging.warn instead.
+
+WARNING:tensorflow:Reaction file could not be loaded: [Errno 2] No such file or directory: '/home/mleone2/ml_class_project/ProteinGAN/src/gan/../../data/protein/our_data/train_reactions.npy'
+W1206 00:09:06.488112 140565849311040 protein.py:38] Reaction file could not be loaded: [Errno 2] No such file or directory: '/home/mleone2/ml_class_project/ProteinGAN/src/gan/../../data/protein/our_data/train_reactions.npy'
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:16: The name tf.train.create_global_step is deprecated. Please use tf.compat.v1.train.create_global_step instead.
+
+W1206 00:09:06.489690 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:16: The name tf.train.create_global_step is deprecated. Please use tf.compat.v1.train.create_global_step instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:510: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1206 00:09:06.493082 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:510: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:30: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W1206 00:09:06.493397 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:30: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:30: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W1206 00:09:06.494591 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:30: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:112: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W1206 00:09:06.522444 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:112: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W1206 00:09:06.522595 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:116: The name tf.FixedLenSequenceFeature is deprecated. Please use tf.io.FixedLenSequenceFeature instead.
+
+W1206 00:09:06.522705 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:116: The name tf.FixedLenSequenceFeature is deprecated. Please use tf.io.FixedLenSequenceFeature instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:53: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W1206 00:09:06.553074 140565849311040 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/utils_ori.py:53: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:23: The name tf.logging.log is deprecated. Please use tf.compat.v1.logging.log instead.
+
+W1206 00:09:06.604882 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/base_model.py:23: The name tf.logging.log is deprecated. Please use tf.compat.v1.logging.log instead.
+
+INFO:tensorflow:Generator: (16, 1, 8, 1408)
+I1206 00:09:06.604998 140565849311040 base_model.py:23] Generator: (16, 1, 8, 1408)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/generator.py:56: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+W1206 00:09:06.704412 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/generator.py:56: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+INFO:tensorflow:Generator: (16, 1, 16, 1408)
+I1206 00:09:06.705601 140565849311040 base_model.py:23] Generator: (16, 1, 16, 1408)
+INFO:tensorflow:Generator: (16, 1, 32, 704)
+I1206 00:09:06.802868 140565849311040 base_model.py:23] Generator: (16, 1, 32, 704)
+INFO:tensorflow:Generator: (16, 1, 64, 352)
+I1206 00:09:06.899835 140565849311040 base_model.py:23] Generator: (16, 1, 64, 352)
+INFO:tensorflow:Generator: (16, 1, 128, 176)
+I1206 00:09:07.076175 140565849311040 base_model.py:23] Generator: (16, 1, 128, 176)
+INFO:tensorflow:Generator: (16, 1, 256, 88)
+I1206 00:09:07.274030 140565849311040 base_model.py:23] Generator: (16, 1, 256, 88)
+WARNING:tensorflow:From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W1206 00:09:07.416174 140565849311040 deprecation.py:323] From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Generator: output (16, 1, 512, 4)
+I1206 00:09:07.464828 140565849311040 base_model.py:23] Generator: output (16, 1, 512, 4)
+INFO:tensorflow:Discriminator
+I1206 00:09:07.465908 140565849311040 discriminator.py:20] Discriminator
+INFO:tensorflow:Discriminator: (16, 1, 512, 30)
+I1206 00:09:07.498082 140565849311040 base_model.py:23] Discriminator: (16, 1, 512, 30)
+INFO:tensorflow:Discriminator: (16, 1, 256, 60)
+I1206 00:09:07.693650 140565849311040 base_model.py:23] Discriminator: (16, 1, 256, 60)
+INFO:tensorflow:Discriminator: (16, 1, 128, 120)
+I1206 00:09:07.790102 140565849311040 base_model.py:23] Discriminator: (16, 1, 128, 120)
+INFO:tensorflow:Discriminator: (16, 1, 64, 240)
+I1206 00:09:07.886629 140565849311040 base_model.py:23] Discriminator: (16, 1, 64, 240)
+INFO:tensorflow:Discriminator: (16, 1, 32, 480)
+I1206 00:09:07.983365 140565849311040 base_model.py:23] Discriminator: (16, 1, 32, 480)
+INFO:tensorflow:Discriminator: (16, 1, 16, 960)
+I1206 00:09:08.168640 140565849311040 base_model.py:23] Discriminator: (16, 1, 16, 960)
+INFO:tensorflow:Discriminator: (16, 1, 8, 120)
+I1206 00:09:09.193829 140565849311040 base_model.py:23] Discriminator: (16, 1, 8, 120)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:39: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+W1206 00:09:09.194909 140565849311040 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:39: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:40: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W1206 00:09:09.426037 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:40: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:41: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+W1206 00:09:09.427313 140565849311040 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/sngan/discriminator_gumbel.py:41: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+INFO:tensorflow:Discriminator
+I1206 00:09:09.430621 140565849311040 discriminator.py:20] Discriminator
+INFO:tensorflow:Discriminator: (16, 1, 512, 30)
+I1206 00:09:09.453412 140565849311040 base_model.py:23] Discriminator: (16, 1, 512, 30)
+INFO:tensorflow:Discriminator: (16, 1, 256, 60)
+I1206 00:09:09.572100 140565849311040 base_model.py:23] Discriminator: (16, 1, 256, 60)
+INFO:tensorflow:Discriminator: (16, 1, 128, 120)
+I1206 00:09:09.631579 140565849311040 base_model.py:23] Discriminator: (16, 1, 128, 120)
+INFO:tensorflow:Discriminator: (16, 1, 64, 240)
+I1206 00:09:09.691076 140565849311040 base_model.py:23] Discriminator: (16, 1, 64, 240)
+INFO:tensorflow:Discriminator: (16, 1, 32, 480)
+I1206 00:09:09.750025 140565849311040 base_model.py:23] Discriminator: (16, 1, 32, 480)
+INFO:tensorflow:Discriminator: (16, 1, 16, 960)
+I1206 00:09:09.809601 140565849311040 base_model.py:23] Discriminator: (16, 1, 16, 960)
+INFO:tensorflow:Discriminator: (16, 1, 8, 120)
+I1206 00:09:09.907200 140565849311040 base_model.py:23] Discriminator: (16, 1, 8, 120)
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:113: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W1206 00:09:09.948197 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:113: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:152: The name tf.summary.text is deprecated. Please use tf.compat.v1.summary.text instead.
+
+W1206 00:09:09.958601 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/protein.py:152: The name tf.summary.text is deprecated. Please use tf.compat.v1.summary.text instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:28: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W1206 00:09:10.072175 140565849311040 deprecation.py:323] From /home/mleone2/ml_class_project/ProteinGAN/src/common/model/ops.py:28: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:89: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W1206 00:09:10.211315 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/gan_base_model.py:89: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:87: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+W1206 00:09:19.787213 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/documentation.py:87: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+INFO:tensorflow:Saved meta data in /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv
+I1206 00:09:19.835680 140565849311040 documentation.py:103] Saved meta data in /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/models.py:52: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+W1206 00:09:19.835882 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/models.py:52: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+WARNING:tensorflow:From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:58: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W1206 00:09:19.836131 140565849311040 deprecation_wrapper.py:119] From /home/mleone2/ml_class_project/ProteinGAN/src/gan/train_gan.py:58: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I1206 00:09:19.836250 140565849311040 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I1206 00:09:20.417228 140565849311040 monitored_session.py:240] Graph was finalized.
+2022-12-06 00:09:22.224579: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I1206 00:09:23.751891 140565849311040 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I1206 00:09:23.938582 140565849311040 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 00:09:31.943365 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 1e+06
+fake [1 3 3 1 2 0 3 1 1 3 1 0 2 0 2 1 2 2 3 2 0 3 2 3 0 3 2 3 3 3 3 2 1 3 0 0 2 1 0 2 1 3 3 3 3 3 1 2 0 3 3 0 0 3 2 0 1 2 1 0 0 3 2 3 1 3 1 0 1 2 0 1 1 2 2 2 3 2 2 2 3 0 2 1 2 1 2 2 2 3 1 2 3 3 3 3 2 0 2 3 2 2 1 2 0 0 2 3 2 1 1 1 1 0 1 3 2 0 2 3 1 0 2 2 2 3 3 2 2 0 2 3 3 0 1 1 3 2 2 1 3 1 3 1 2 0 1 1 0 2 2 3 2 3 0 3 2 2 1 0 2 0 2 2 3 2 1 0 1 2 1 3 1 2 1 3 0 3 1 2 3 3 1 0 2 3 0 1 1 1 3 3 1 3 2 1 3 1 2 1 3 0 2 1 2 2 0 0 2 2 2 3 3 2 3 3 3 3 1 2 2 0 0 1 2 1 0 2 3 0 0 3 2 1 0 2 2 1 3 3 0 0 2 3 0 3 0 1 2 3 2 1 0 3 3 0 1 0 0 1 3 1 2 0 1 3 2 2 1 2 0 0 0 0 1 1 1 2 2 3 0 2 3 0 1 2 2 0 0 3 3 3 2 1 1 2 1 2 2 2 1 2 1 0 1 2 0 1 2 2 3 3 0 3 3 3 1 0 1 2 0 1 3 3 0 0 2 2 2 1 2 3 3 2 1 3 2 1 2 1 1 2 1 0 3 3 0 2 1 2 0 2 3 3 1 0 1 2 2 0 3 3 2 1 1 2 1 1 0 0 2 2 2 3 0 1 0 3 2 3 3 3 2 1 2 2 2 3 2 2 1 2 3 3 1 1 1 3 1 0 2 2 2 1 3 2 0 0 0 0 0 2 1 1 1 1 2 3 1 1 2 2 1 0 0 1 2 0 2 1 3 3 3 0 2 1 3 2 3 1 3 0 2 0 0 1 1 1 3 3 2 1 2 3 2 3 3 1 2 0 3 3 3 2 0 3 2 0 1 2 1 3 2 3 1 3 1 3 1 0 0 2 1 2 2 2 3 1 2 1 2 0 2 2 2 3 1 1 2 1 3 0 1 3 3 3 0 3 2 3 3 2]
+r1_penalty 0.000843180576
+INFO:tensorflow:Running Local Blast thread for step 1
+INFO:tensorflow: Step = 1, Dev (Fake) = 2.7342574e-07, Dev (Real) = 0.39985365, Loss (Disc) = 1.3848886, Loss (Gen) = 0.6836369
+I1206 00:10:22.273956 140562357085952 local_blast_summary.py:18] Running Local Blast thread for step 1
+I1206 00:10:22.274122 140565849311040 basic_session_run_hooks.py:262]  Step = 1, Dev (Fake) = 2.7342574e-07, Dev (Real) = 0.39985365, Loss (Disc) = 1.3848886, Loss (Gen) = 0.6836369
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 938, in format
+    return prefix + super(PythonFormatter, self).format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1390, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 901, in handle
+    return self._current_handler.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 838, in emit
+    super(PythonHandler, self).emit(record)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+INFO:tensorflow:Saving checkpoints for 57 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 00:29:40.391005 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 57 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0481943
+I1206 00:44:57.203167 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0481943
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 105 vs previous value: 105. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1206 00:46:42.574182 140565849311040 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 105 vs previous value: 105. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 115 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 00:49:48.885771 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 115 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 173 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 01:09:59.671167 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 173 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0479148
+I1206 01:19:44.242576 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0479148
+INFO:tensorflow:Saving checkpoints for 231 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 01:30:20.045483 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 231 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 280 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 01:50:34.372005 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 280 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+WARNING:tensorflow:From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W1206 01:50:39.293111 140565849311040 deprecation.py:323] From /home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Temperature 0.192498833
+fake [0 0 0 0 0 3 3 1 1 1 1 3 3 0 0 1 2 3 0 3 3 0 1 1 0 1 0 1 3 1 0 2 1 2 2 2 0 0 2 0 2 3 0 2 1 1 1 0 2 1 1 1 1 0 1 0 0 2 1 1 1 1 0 0 3 0 0 2 3 0 0 0 3 1 3 2 0 1 3 1 1 1 0 2 2 1 1 1 1 2 1 1 3 2 3 0 2 0 3 2 3 0 3 0 2 0 2 2 3 0 1 0 2 0 0 1 3 0 2 1 1 1 2 0 3 2 2 2 3 1 0 2 0 0 1 2 3 1 3 0 2 1 0 1 2 3 0 2 0 2 0 0 2 1 1 1 2 1 1 1 2 0 0 2 2 0 2 0 2 0 0 3 3 0 1 0 2 2 0 3 2 3 2 1 1 3 3 1 3 2 3 3 3 0 2 2 3 0 2 2 2 3 2 0 3 1 3 1 3 2 0 2 2 1 1 0 1 2 3 0 0 3 0 2 1 0 1 0 3 0 0 0 3 1 3 0 3 3 2 1 0 3 0 2 3 3 2 0 2 3 1 1 3 1 1 1 3 0 2 2 3 0 2 3 1 0 3 0 2 1 1 1 2 2 0 2 2 3 2 2 1 3 1 2 2 2 3 2 3 0 2 2 3 2 2 0 2 2 0 3 3 1 3 1 3 2 3 2 3 1 1 1 1 1 1 3 3 1 3 0 3 0 1 3 2 0 2 1 2 1 3 2 3 2 0 1 2 3 0 2 3 0 1 0 1 1 1 1 3 1 0 2 3 0 2 2 3 3 2 2 2 1 0 2 0 2 1 0 2 0 0 3 2 2 0 3 2 2 1 1 3 1 1 0 3 3 2 0 2 0 0 0 2 1 1 2 2 1 3 0 2 0 0 1 1 0 2 0 1 2 0 2 2 0 0 3 2 0 0 0 3 0 3 0 3 0 2 2 0 0 2 1 2 2 0 3 3 0 3 1 1 3 1 1 3 0 1 0 2 0 3 2 3 0 0 0 1 1 2 1 1 1 3 1 2 3 0 0 3 3 2 2 1 1 0 1 3 1 0 0 3 0 0 2 3 3 0 2 0 2 0 2 2 2 0 1 2 0 0 3 3 0 2 0 1 3 1 2 0 2 0 0]
+r1_penalty 0.00637750234
+INFO:tensorflow:global_step/sec: 0.0418776
+I1206 01:59:32.151288 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0418776
+INFO:tensorflow: Step = 301, Dev (Fake) = 0.3082696, Dev (Real) = 0.3999165, Loss (Disc) = 1.3157511, Loss (Gen) = 0.7643296 (6550.897 sec)
+I1206 01:59:33.170760 140565849311040 basic_session_run_hooks.py:260]  Step = 301, Dev (Fake) = 0.3082696, Dev (Real) = 0.3999165, Loss (Disc) = 1.3157511, Loss (Gen) = 0.7643296 (6550.897 sec)
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 301 vs previous value: 301. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1206 01:59:57.242461 140565849311040 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 301 vs previous value: 301. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 328 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 02:10:35.233658 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 328 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 377 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 02:30:47.826459 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 377 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0404855
+I1206 02:40:42.171191 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0404855
+INFO:tensorflow:Saving checkpoints for 426 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 02:50:55.685322 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 426 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 475 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 03:11:09.242784 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 475 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0404807
+I1206 03:21:52.481380 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0404807
+INFO:tensorflow:Saving checkpoints for 524 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 03:31:12.570123 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 524 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 573 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 03:51:22.905701 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 573 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.171695828
+fake [0 0 0 0 0 0 3 3 2 1 3 3 1 3 3 3 0 0 0 0 2 1 0 3 1 1 2 2 1 2 3 3 0 1 3 0 3 0 2 1 1 3 1 3 1 2 2 2 3 2 2 0 0 2 0 0 1 1 1 1 1 2 2 0 0 0 0 0 2 1 2 2 0 1 3 3 1 2 3 2 0 0 3 0 3 0 0 1 2 1 1 3 1 2 3 2 0 0 3 3 0 0 2 1 1 1 1 2 1 0 3 3 2 0 0 0 2 2 1 0 1 1 1 3 2 2 0 1 0 0 0 0 0 0 2 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 2 1 1 1 2 3 3 0 0 0 0 0 0 3 2 0 1 1 1 1 2 2 0 3 0 3 0 0 3 3 2 0 1 1 1 1 0 0 1 2 2 0 0 3 0 0 2 1 3 1 2 1 1 3 1 0 0 2 0 0 0 0 3 1 2 1 3 1 2 1 3 0 0 2 2 2 0 0 1 0 1 1 1 1 2 1 3 0 0 3 0 1 2 0 1 1 3 1 3 3 2 3 3 0 0 3 0 3 3 3 1 0 1 1 1 1 2 3 0 0 0 3 3 2 3 0 3 1 2 1 3 1 2 1 3 0 0 3 0 2 0 3 2 1 1 1 1 1 2 3 3 0 3 3 3 3 2 0 2 1 3 1 1 1 2 2 0 0 0 0 0 3 0 0 3 1 1 1 1 1 2 1 1 0 0 3 0 0 0 2 2 1 1 1 3 1 2 2 1 1 0 0 0 3 0 2 3 3 0 1 2 1 2 0 3 0 3 1 3 0 0 0 1 1 1 1 1 1 2 0 0 0 0 2 0 0 3 2 2 1 1 1 3 1 2 3 0 0 0 3 0 2 2 0 0 1 1 0 3 1 2 3 1 0 0 3 0 2 0 0 2 1 2 1 1 1 2 3 2 1 0 3 0 2 3 0 0 1 2 1 2 1 2 0 0 1 0 3 0 1 0 0 2 1 3 1 1 1 2 3 3 0 0 3 0 1 1 0 0 1 2 1 1 1 2 0 1 0 0 3 0 3 1 0 3 1 1 1 1 1 2 2 0 0 0 2 0 2 3 0 0 1 3 0 3 0 0 0 0]
+r1_penalty 0.0043202145
+INFO:tensorflow:global_step/sec: 0.0402991
+I1206 04:03:13.924255 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0402991
+INFO:tensorflow: Step = 601, Dev (Fake) = 0.28628573, Dev (Real) = 0.40019065, Loss (Disc) = 1.330126, Loss (Gen) = 0.7631278 (7421.568 sec)
+I1206 04:03:14.738859 140565849311040 basic_session_run_hooks.py:260]  Step = 601, Dev (Fake) = 0.28628573, Dev (Real) = 0.40019065, Loss (Disc) = 1.330126, Loss (Gen) = 0.7631278 (7421.568 sec)
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 601 vs previous value: 601. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1206 04:03:39.191248 140565849311040 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 601 vs previous value: 601. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 621 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 04:11:25.052606 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 621 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 670 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 04:31:35.705697 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 670 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.040519
+I1206 04:44:21.900854 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.040519
+INFO:tensorflow:Saving checkpoints for 719 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 04:51:42.325859 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 719 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 768 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 05:11:48.811331 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 768 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0405683
+I1206 05:25:26.878069 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0405683
+INFO:tensorflow:Saving checkpoints for 817 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 05:31:58.984470 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 817 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 866 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 05:52:15.282274 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 866 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.161477357
+fake [0 0 0 0 0 1 2 1 1 1 0 0 3 0 0 3 2 1 0 0 3 1 1 0 1 0 0 0 3 3 0 0 1 1 3 0 3 1 2 3 1 1 0 0 2 1 3 3 0 1 0 0 3 1 0 0 0 0 0 0 3 0 3 3 1 2 3 0 3 1 0 0 3 0 0 0 1 1 0 1 1 2 3 0 2 0 0 0 1 0 0 0 2 3 1 1 1 2 3 1 2 1 2 0 1 1 0 0 0 2 3 1 1 2 3 0 1 1 0 0 1 2 2 1 1 3 1 3 1 2 2 1 2 3 2 0 1 1 0 1 2 0 3 0 1 2 2 0 1 0 2 1 2 0 2 0 2 0 0 1 1 2 2 1 2 1 0 1 1 2 0 0 2 0 1 0 1 2 2 0 2 2 2 1 2 1 3 1 2 3 2 0 1 2 1 1 3 0 0 0 1 2 0 0 1 1 2 1 1 2 3 0 2 0 3 2 1 2 3 0 2 3 0 1 1 2 2 0 3 0 1 0 2 1 0 0 1 1 2 3 1 2 2 0 1 3 3 3 1 2 0 0 2 1 2 3 1 2 3 0 3 1 2 1 1 0 2 0 3 2 0 1 1 0 2 0 2 1 3 1 1 2 2 0 2 3 2 3 1 2 2 0 2 2 1 1 1 3 0 0 3 0 0 3 1 2 2 0 2 0 2 1 0 0 2 0 0 1 1 3 1 3 2 0 2 3 1 3 1 0 2 0 1 0 2 0 1 2 0 0 3 0 1 3 1 0 0 0 3 1 3 3 1 3 3 0 3 3 0 0 3 0 0 1 3 0 3 3 1 2 2 0 2 0 3 3 1 0 1 0 1 3 3 3 1 2 3 0 3 1 2 3 1 0 2 0 3 1 3 3 1 1 0 0 3 3 2 0 1 0 2 0 0 0 0 3 1 2 0 1 3 0 0 0 1 2 0 0 3 1 2 3 1 2 0 0 2 1 1 3 1 0 2 0 1 0 0 0 1 2 2 0 1 3 1 0 1 2 0 0 1 0 1 3 1 2 3 0 2 1 1 0 1 2 0 0 2 0 3 0 1 2 3 0 2 1 0 1 1 1 0 0 0 1 2 3 0 2 0 0 2 0 2 0 1 0 0 0 2 0 0 0]
+r1_penalty 0.0064543169
+INFO:tensorflow:global_step/sec: 0.0401758
+I1206 06:06:55.939949 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0401758
+INFO:tensorflow: Step = 901, Dev (Fake) = 0.3030876, Dev (Real) = 0.39960772, Loss (Disc) = 1.3019261, Loss (Gen) = 0.76859987 (7421.210 sec)
+I1206 06:06:55.949326 140565849311040 basic_session_run_hooks.py:260]  Step = 901, Dev (Fake) = 0.3030876, Dev (Real) = 0.39960772, Loss (Disc) = 1.3019261, Loss (Gen) = 0.76859987 (7421.210 sec)
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 901 vs previous value: 901. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1206 06:07:20.935028 140565849311040 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 901 vs previous value: 901. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 914 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 06:12:16.102995 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 914 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 963 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 06:32:32.138733 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 963 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0403112
+I1206 06:48:16.639408 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0403112
+INFO:tensorflow:Saving checkpoints for 1012 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 06:52:48.723109 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1012 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1061 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 07:13:04.692687 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1061 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0403297
+I1206 07:29:36.201756 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0403297
+INFO:tensorflow:Saving checkpoints for 1110 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 07:33:16.649187 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1110 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1159 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 07:53:30.141726 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1159 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.154932454
+fake [0 0 2 0 0 3 0 0 2 2 1 0 1 2 1 0 2 2 3 2 2 2 2 2 2 2 2 0 1 3 1 1 2 2 2 2 1 0 2 2 2 2 0 2 0 1 2 2 2 2 2 0 0 0 1 0 2 0 0 0 1 2 0 1 0 2 0 1 2 0 0 2 2 2 1 2 3 2 1 2 2 2 1 1 2 2 1 2 2 0 2 1 1 1 3 3 3 2 2 0 3 2 2 2 3 0 0 0 1 1 1 0 0 2 2 2 0 0 3 2 2 0 1 0 0 1 1 1 2 2 0 3 0 1 0 2 2 2 0 0 2 2 1 0 0 2 1 1 2 2 2 2 2 2 2 0 2 2 0 1 2 2 2 1 0 2 1 1 2 2 3 0 2 2 1 1 1 2 0 1 2 2 3 0 2 3 0 2 2 2 1 2 2 2 0 2 1 2 3 0 1 0 0 1 1 2 2 2 2 3 0 3 2 0 3 0 2 0 2 0 2 2 2 1 2 3 1 2 0 3 2 0 1 3 2 2 1 1 2 3 0 0 2 2 2 1 3 1 2 0 0 0 2 1 1 2 0 2 0 3 2 3 2 0 2 0 2 0 1 0 1 1 1 0 3 2 3 3 1 0 1 0 0 0 1 3 1 3 1 2 0 1 3 3 3 0 1 2 0 0 1 2 1 3 1 2 0 0 3 1 3 3 0 1 0 0 1 1 0 1 1 0 0 3 3 1 3 0 2 0 0 0 1 2 1 1 0 0 0 1 3 1 3 3 1 3 0 3 1 2 1 1 1 2 0 1 3 0 3 0 2 3 0 0 1 2 1 3 1 3 0 1 3 3 1 0 1 0 0 0 0 2 1 1 0 2 0 1 2 0 3 1 1 1 2 0 1 0 1 3 0 2 0 1 2 3 2 0 1 0 1 0 0 2 1 3 1 2 0 1 1 1 3 0 2 3 0 0 1 1 1 3 1 0 0 1 1 1 3 2 1 0 0 0 1 3 1 0 1 3 0 3 2 1 3 3 3 0 0 0 1 2 1 3 1 0 0 2 3 3 3 0 2 2 0 0 1 2 1 3 0 0 0 0 2 0 1 0 2 0 2 0 1 2 1 1 1 3 0 1 2 0 3 0 2 3 0 0 0 0 0 0]
+r1_penalty 0.00350680342
+INFO:tensorflow:global_step/sec: 0.0401243
+I1206 08:11:08.458268 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0401243
+INFO:tensorflow:Running Local Blast thread for step 1201
+INFO:tensorflow: Step = 1201, Dev (Fake) = 0.29548883, Dev (Real) = 0.39848316, Loss (Disc) = 1.350383, Loss (Gen) = 0.73528 (7453.527 sec)
+I1206 08:11:09.475914 140562158036736 local_blast_summary.py:18] Running Local Blast thread for step 1201
+I1206 08:11:09.476065 140565849311040 basic_session_run_hooks.py:260]  Step = 1201, Dev (Fake) = 0.29548883, Dev (Real) = 0.39848316, Loss (Disc) = 1.350383, Loss (Gen) = 0.73528 (7453.527 sec)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 938, in format
+    return prefix + super(PythonFormatter, self).format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1390, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 901, in handle
+    return self._current_handler.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 838, in emit
+    super(PythonHandler, self).emit(record)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 1201 vs previous value: 1201. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1206 08:11:33.986758 140565849311040 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 1201 vs previous value: 1201. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 1207 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 08:13:39.416197 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1207 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1256 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 08:33:57.261320 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1256 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0402828
+I1206 08:52:30.907408 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0402828
+INFO:tensorflow:Saving checkpoints for 1305 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 08:54:10.987494 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1305 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1354 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 09:14:21.956693 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1354 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.040408
+I1206 09:33:45.663475 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.040408
+INFO:tensorflow:Saving checkpoints for 1403 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 09:34:36.463702 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1403 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1452 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 09:54:55.987679 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1452 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.150209084
+fake [0 0 0 0 0 0 0 0 2 0 2 1 1 2 2 0 2 0 1 2 3 0 1 0 0 2 1 2 2 2 2 0 2 0 1 2 3 0 2 0 0 2 0 2 2 2 2 0 2 0 0 2 3 0 2 0 2 0 0 2 1 2 2 0 1 1 1 2 3 0 2 0 2 0 2 0 1 1 2 1 2 0 1 2 3 0 2 0 2 0 0 2 1 2 2 0 1 3 1 2 3 0 2 0 0 0 1 2 1 2 3 0 0 3 1 2 3 0 3 0 0 0 0 3 1 0 2 2 2 0 1 2 0 1 2 3 0 2 1 2 0 0 3 3 1 0 1 1 3 1 2 3 3 3 0 1 1 1 1 3 2 0 3 0 1 1 3 0 1 0 3 0 1 0 1 2 3 1 0 3 1 1 2 1 1 3 1 0 1 0 1 2 2 3 2 0 3 1 2 0 1 1 0 2 1 2 3 3 3 0 1 2 3 1 2 0 0 2 1 2 1 2 2 1 0 2 1 2 3 1 2 0 0 2 0 0 1 2 2 0 1 0 1 2 0 1 2 3 3 0 1 2 1 2 2 2 1 3 1 2 0 1 0 0 3 0 0 3 1 1 3 0 2 1 1 3 1 0 3 3 2 3 1 3 2 2 2 1 2 0 1 2 0 0 2 0 0 2 0 0 0 2 3 3 2 0 1 2 3 2 2 0 1 0 2 0 1 1 1 0 2 0 2 2 3 1 0 0 0 0 1 2 1 2 1 0 2 2 1 2 3 1 2 2 0 0 2 2 2 2 2 0 1 2 1 3 0 0 2 2 1 0 0 0 1 2 1 1 0 3 1 1 1 1 2 1 0 1 1 1 2 2 1 3 1 0 0 0 1 1 1 3 0 0 0 3 0 0 1 3 3 1 1 1 1 1 1 3 1 3 0 3 1 3 1 3 3 1 2 3 0 1 1 3 3 0 0 3 0 0 0 3 3 0 3 1 1 1 2 3 1 3 0 1 1 2 1 2 3 3 1 3 0 1 1 1 1 0 3 3 0 2 1 1 3 0 1 1 0 1 0 3 1 1 0 3 0 2 0 3 3 0 1 2 0 1 2 0 3 0 0 3 0 0 2 0 1 2 2 1 1 1 1 0 3 3 0 0 0 0 0 0]
+r1_penalty 0.0059916582
+INFO:tensorflow:global_step/sec: 0.0400037
+I1206 10:15:25.434274 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0400037
+INFO:tensorflow:Saving checkpoints for 1501 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 10:15:26.048031 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1501 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow: Step = 1501, Dev (Fake) = 0.3295549, Dev (Real) = 0.3998773, Loss (Disc) = 1.331577, Loss (Gen) = 0.8695606 (7461.761 sec)
+I1206 10:15:31.237326 140565849311040 basic_session_run_hooks.py:260]  Step = 1501, Dev (Fake) = 0.3295549, Dev (Real) = 0.3998773, Loss (Disc) = 1.331577, Loss (Gen) = 0.8695606 (7461.761 sec)
+INFO:tensorflow:Saving checkpoints for 1551 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 10:35:49.886744 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1551 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0409529
+I1206 10:56:07.264200 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0409529
+INFO:tensorflow:Saving checkpoints for 1601 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 10:56:07.266307 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1601 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1650 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 11:16:07.396254 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1650 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1699 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 11:36:08.918044 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1699 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0407363
+I1206 11:37:02.079065 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0407363
+INFO:tensorflow:Saving checkpoints for 1749 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 11:56:33.127598 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1749 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1798 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 12:16:35.520493 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1798 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.146557868
+fake [0 0 0 0 0 0 2 2 0 0 1 0 3 1 3 1 0 0 3 0 3 1 2 3 0 1 2 0 1 1 3 0 2 1 0 1 1 1 0 2 1 0 2 0 0 0 2 0 1 1 0 0 1 1 2 1 3 1 3 2 1 0 2 0 1 1 1 0 1 0 3 3 0 1 0 2 0 0 2 0 3 1 0 3 3 3 3 1 2 2 2 1 3 1 0 0 2 2 0 1 1 0 0 0 0 2 1 0 0 0 2 3 1 1 3 1 2 1 3 1 1 1 2 1 0 0 3 1 1 3 0 1 1 0 2 2 1 2 1 0 0 0 3 0 1 2 2 0 3 2 1 0 2 3 0 2 0 0 3 0 1 1 0 3 1 0 3 3 1 0 2 0 0 0 2 2 0 2 2 1 1 1 3 1 3 1 3 0 3 0 3 3 1 0 0 1 0 0 3 0 1 2 0 2 2 2 2 1 0 1 1 3 0 1 3 3 1 1 3 0 2 0 2 1 0 3 0 3 1 1 3 0 2 1 1 2 3 0 2 0 1 0 2 3 3 0 2 1 2 1 2 3 1 0 3 1 2 3 0 0 0 2 0 3 2 2 2 3 3 0 2 0 1 0 3 3 1 0 3 1 2 2 2 0 1 3 3 0 1 1 0 3 1 1 0 1 0 2 0 2 3 0 3 1 1 2 2 0 3 2 3 1 2 1 1 1 1 3 0 1 0 1 0 0 1 2 3 1 0 1 2 0 0 0 0 2 2 2 0 0 1 1 1 3 0 0 3 3 1 3 1 2 1 1 2 1 1 0 0 3 1 0 0 3 0 3 1 2 1 2 2 0 2 0 2 3 3 0 0 3 0 3 1 2 1 2 2 1 2 1 2 3 0 1 0 1 0 3 1 2 1 2 2 0 2 0 0 2 3 3 0 3 0 3 1 3 1 2 1 0 2 0 0 3 3 0 0 3 2 3 1 2 1 2 0 0 2 0 0 3 1 0 3 3 1 3 1 3 1 1 0 0 2 1 1 3 3 0 0 3 0 3 1 2 1 2 2 0 2 0 0 2 3 3 0 3 0 3 1 3 1 2 1 1 2 0 1 3 0 0 0 3 0 3 1 2 1 0 0 0 2 0 2 0 2 0 0 0 0 0 0 0]
+r1_penalty 0.00369298086
+INFO:tensorflow:global_step/sec: 0.0404913
+I1206 12:18:11.748194 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0404913
+INFO:tensorflow: Step = 1801, Dev (Fake) = 0.34697735, Dev (Real) = 0.40006885, Loss (Disc) = 1.3511262, Loss (Gen) = 0.72869146 (7360.518 sec)
+I1206 12:18:11.755577 140565849311040 basic_session_run_hooks.py:260]  Step = 1801, Dev (Fake) = 0.34697735, Dev (Real) = 0.40006885, Loss (Disc) = 1.3511262, Loss (Gen) = 0.72869146 (7360.518 sec)
+INFO:tensorflow:Saving checkpoints for 1847 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 12:36:55.439701 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1847 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1896 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 12:57:00.086234 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1896 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0407196
+I1206 12:59:07.568595 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0407196
+INFO:tensorflow:Saving checkpoints for 1945 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 13:17:06.253876 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1945 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1994 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 13:37:10.471071 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 1994 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0406285
+I1206 13:40:08.897412 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0406285
+INFO:tensorflow:Saving checkpoints for 2043 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 13:57:14.793139 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2043 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2092 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 14:17:15.207312 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2092 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.14360626
+fake [0 0 0 0 0 2 2 3 0 0 0 0 0 1 3 0 3 0 3 0 0 2 0 0 3 0 0 1 2 0 0 3 0 2 1 2 1 2 3 0 3 2 0 1 1 2 0 0 0 3 0 0 0 2 0 1 0 0 0 0 2 1 1 2 0 2 1 2 1 1 3 3 1 0 0 0 1 2 3 3 3 1 3 3 0 2 0 2 0 2 0 2 2 1 2 2 1 3 0 2 1 1 3 3 0 2 1 0 1 2 3 0 3 2 0 3 0 2 0 2 0 2 0 2 2 0 1 3 2 2 1 2 1 1 3 3 1 3 0 1 0 3 0 0 3 0 3 0 0 2 0 1 2 1 0 1 2 1 0 2 0 3 0 2 1 3 1 0 1 2 0 1 2 0 1 0 1 0 1 1 1 1 3 3 2 2 1 0 1 0 0 0 0 0 0 0 0 1 1 1 1 0 0 2 3 3 1 2 1 2 1 1 1 1 3 1 3 3 1 2 1 2 3 3 0 0 2 0 0 2 0 1 2 1 1 2 3 1 2 2 1 2 1 2 1 1 3 1 3 3 1 3 1 2 3 3 0 0 2 3 0 3 0 1 3 1 1 2 3 1 1 3 1 2 1 2 1 0 3 0 3 3 1 0 1 3 3 3 0 0 2 3 0 3 1 2 3 1 0 2 3 1 1 0 1 2 1 2 1 1 3 1 3 3 1 2 1 3 3 3 0 0 2 0 0 3 2 2 3 3 2 2 3 1 0 2 1 2 1 1 1 0 3 1 3 3 1 1 1 3 3 3 0 0 2 0 0 3 1 1 3 0 1 2 3 1 2 2 0 2 1 2 1 1 3 1 3 3 1 0 1 3 3 3 0 0 2 3 0 0 1 2 3 0 1 3 3 1 1 3 1 2 1 1 1 1 3 1 0 0 1 2 1 3 1 1 0 0 0 1 0 2 1 1 1 0 0 1 3 0 1 3 0 2 1 1 1 1 1 1 2 1 1 2 2 1 3 3 0 0 0 0 0 3 3 2 3 2 0 2 3 1 1 2 0 2 1 1 3 0 3 1 3 3 1 1 1 3 1 3 0 2 2 2 0 3 1 1 1 0 0 1 3 1 2 2 1 2 1 1 1 0 3 1 1 0 0 0 0 0 0 0]
+r1_penalty 0.00478115445
+INFO:tensorflow:global_step/sec: 0.040561
+I1206 14:21:14.320542 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.040561
+INFO:tensorflow: Step = 2101, Dev (Fake) = 0.33574367, Dev (Real) = 0.39847296, Loss (Disc) = 1.3437786, Loss (Gen) = 0.7206196 (7382.575 sec)
+I1206 14:21:14.330444 140565849311040 basic_session_run_hooks.py:260]  Step = 2101, Dev (Fake) = 0.33574367, Dev (Real) = 0.39847296, Loss (Disc) = 1.3437786, Loss (Gen) = 0.7206196 (7382.575 sec)
+INFO:tensorflow:Saving checkpoints for 2141 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 14:37:30.319713 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2141 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2190 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 14:57:38.288744 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2190 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.040681
+I1206 15:02:12.468151 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.040681
+INFO:tensorflow:Saving checkpoints for 2239 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 15:17:40.974805 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2239 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2288 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 15:37:41.534873 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2288 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0407974
+I1206 15:43:03.606727 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0407974
+INFO:tensorflow:Saving checkpoints for 2338 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 15:58:05.015429 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2338 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2388 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 16:18:27.888638 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2388 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.141143739
+fake [0 0 0 0 0 1 0 1 2 0 2 3 3 0 2 2 2 0 2 0 0 1 3 0 2 0 2 3 3 0 1 2 2 1 2 0 2 0 2 1 2 0 3 3 3 0 2 0 2 0 2 2 2 1 2 1 2 0 0 3 0 1 0 0 2 0 0 3 0 3 0 3 3 3 0 3 0 2 1 2 1 1 1 3 1 1 1 3 3 0 3 1 3 1 2 2 3 0 0 2 0 2 0 2 0 3 1 3 1 2 1 3 1 3 2 3 0 1 1 3 3 0 2 0 3 2 2 2 3 0 0 3 0 2 0 2 0 3 1 3 1 2 1 3 1 1 2 3 3 3 1 3 3 0 3 2 3 1 2 2 3 0 0 2 0 2 0 3 3 3 1 3 0 2 1 3 3 0 2 3 0 2 1 3 3 1 3 3 3 1 0 2 3 0 0 2 0 2 0 2 0 3 1 3 1 2 1 3 3 1 1 3 3 3 1 3 3 0 3 0 2 1 2 2 3 0 0 2 0 3 0 3 0 3 1 3 1 2 1 3 1 1 1 3 1 1 1 2 3 0 3 0 3 1 2 2 3 0 2 2 0 2 0 3 0 3 1 3 1 2 1 3 3 1 1 3 0 1 1 2 3 1 3 1 3 1 2 2 0 0 2 1 0 2 3 1 3 3 1 2 1 1 1 0 3 0 2 3 0 0 0 2 2 0 2 3 3 1 1 2 1 1 3 0 1 1 3 2 2 0 3 3 3 0 2 2 2 0 2 2 2 1 2 0 2 0 0 3 0 1 1 1 1 1 3 0 3 2 2 1 2 0 3 3 3 0 2 0 2 2 2 2 3 0 2 0 2 0 0 3 3 0 1 3 1 2 0 0 0 1 2 0 2 1 3 3 3 0 2 2 2 2 2 2 1 0 2 1 2 0 2 3 0 1 1 1 3 0 0 0 0 1 2 1 0 1 2 1 3 0 2 0 1 1 2 0 0 1 1 1 3 1 0 2 2 1 2 2 3 3 0 2 0 0 0 2 0 3 1 3 1 2 1 1 3 1 0 3 1 3 1 3 3 0 3 1 3 1 2 2 3 0 1 2 0 0 0 2 3 3 1 3 1 2 1 3 1 1 2 3 0 3 1 3 3 0 0 0 2 0 0 3]
+r1_penalty 0.00228021666
+INFO:tensorflow:global_step/sec: 0.0406022
+I1206 16:24:06.524700 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0406022
+INFO:tensorflow:Running Local Blast thread for step 2401
+INFO:tensorflow: Step = 2401, Dev (Fake) = 0.32531804, Dev (Real) = 0.39781743, Loss (Disc) = 1.3604043, Loss (Gen) = 0.71407 (7372.206 sec)
+I1206 16:24:06.536249 140562191607552 local_blast_summary.py:18] Running Local Blast thread for step 2401
+I1206 16:24:06.536378 140565849311040 basic_session_run_hooks.py:260]  Step = 2401, Dev (Fake) = 0.32531804, Dev (Real) = 0.39781743, Loss (Disc) = 1.3604043, Loss (Gen) = 0.71407 (7372.206 sec)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 20, in run
+    self.run_blast()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 22, in run_blast
+    self.print_blast_results(sequences, fasta, "val")
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 29, in print_blast_results
+    avg_similarities, s_max = self.get_stats(len(sequences), similarities, "{}/BLOMSUM45".format(type), np.max)
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/local_blast_summary.py", line 38, in get_stats
+    best_value = f(similarities)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2706, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 938, in format
+    return prefix + super(PythonFormatter, self).format(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/mleone2/ml_class_project/ProteinGAN/src/gan/protein/blast_summary.py", line 22, in run
+    tf.logging.warning("Unexpected error in BlastSummary thread:", str(e))
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/tensorflow/python/platform/tf_logging.py", line 166, in warning
+    get_logger().warning(msg, *args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1390, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 901, in handle
+    return self._current_handler.handle(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+  File "/home/donghuiy/miniconda3/envs/ml_project/lib/python3.7/site-packages/absl/logging/__init__.py", line 838, in emit
+    super(PythonHandler, self).emit(record)
+Message: 'Unexpected error in BlastSummary thread:'
+Arguments: ('zero-size array to reduction operation maximum which has no identity',)
+INFO:tensorflow:Saving checkpoints for 2437 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 16:38:39.022033 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2437 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2486 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 16:58:41.577493 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2486 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0408757
+I1206 17:04:52.965901 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0408757
+INFO:tensorflow:Saving checkpoints for 2536 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 17:19:00.658374 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2536 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2585 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 17:39:02.487599 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2585 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0407579
+I1206 17:45:46.477567 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0407579
+INFO:tensorflow:Saving checkpoints for 2634 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 17:59:06.410733 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2634 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2684 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 18:19:25.951197 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2684 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+Temperature 0.139040589
+fake [0 0 0 0 0 2 3 2 0 2 3 1 2 1 0 3 0 1 1 0 0 2 0 3 1 3 3 1 1 0 3 3 0 1 0 1 0 0 0 0 0 0 0 0 2 0 3 3 1 0 0 0 3 1 0 3 1 0 1 2 2 3 3 1 3 3 1 1 0 3 0 3 1 3 1 1 1 3 3 1 2 1 2 2 0 0 1 3 1 2 1 2 1 3 3 1 0 1 0 3 1 2 1 3 1 2 3 1 1 3 0 1 2 1 2 2 3 1 0 3 1 2 1 2 1 3 3 3 1 2 0 3 1 3 1 3 2 2 1 1 2 3 3 0 2 0 2 2 3 1 3 0 1 2 1 2 1 2 3 3 1 3 0 3 1 2 1 3 1 2 3 1 2 3 0 1 2 0 2 0 3 1 2 1 1 2 0 2 1 2 3 3 1 1 0 3 1 1 3 0 3 2 3 1 2 0 1 1 0 3 0 1 0 1 0 1 0 2 0 2 2 0 0 1 0 1 0 3 0 1 3 3 1 2 1 1 2 2 3 1 0 3 2 0 2 1 2 2 1 2 1 2 1 3 3 1 1 1 0 3 1 1 1 3 1 3 3 1 0 3 3 0 1 0 2 3 3 1 3 3 1 2 0 2 0 3 3 3 1 3 0 3 0 3 1 3 1 2 3 1 1 3 0 1 2 0 2 0 3 1 1 3 1 3 1 0 1 1 0 3 0 0 1 3 0 1 0 0 0 1 0 1 0 0 0 3 1 1 2 0 0 1 0 2 1 0 3 1 2 1 2 3 0 1 0 1 1 1 2 2 0 0 0 0 2 2 2 2 0 0 3 1 1 2 2 3 0 3 3 1 2 1 1 3 0 1 2 0 2 2 0 0 0 2 2 0 2 0 2 3 0 0 0 1 1 2 0 0 0 1 3 0 2 1 1 1 0 0 3 2 0 1 0 0 0 1 0 1 1 0 0 1 1 0 0 0 3 1 2 0 1 1 1 2 1 3 0 1 1 3 0 3 1 3 1 3 1 2 1 1 2 3 3 0 3 0 2 2 3 1 3 3 1 2 1 2 1 3 3 3 1 3 0 3 1 2 1 3 1 2 3 1 2 2 3 0 2 2 2 2 3 1 3 3 1 2 0 2 0 0 0 0]
+r1_penalty 0.00242177537
+INFO:tensorflow:global_step/sec: 0.0407268
+I1206 18:26:41.862861 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0407268
+INFO:tensorflow: Step = 2701, Dev (Fake) = 0.334221, Dev (Real) = 0.4019265, Loss (Disc) = 1.358747, Loss (Gen) = 0.7152168 (7355.336 sec)
+I1206 18:26:41.872179 140565849311040 basic_session_run_hooks.py:260]  Step = 2701, Dev (Fake) = 0.334221, Dev (Real) = 0.4019265, Loss (Disc) = 1.358747, Loss (Gen) = 0.7152168 (7355.336 sec)
+INFO:tensorflow:Saving checkpoints for 2733 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 18:39:37.977443 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2733 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2782 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 18:59:38.065183 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2782 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.0409195
+I1206 19:07:25.686666 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.0409195
+INFO:tensorflow:Saving checkpoints for 2832 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 19:19:56.862758 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2832 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2882 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 19:40:12.994520 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2882 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.041054
+I1206 19:48:01.505321 140565849311040 basic_session_run_hooks.py:692] global_step/sec: 0.041054
+INFO:tensorflow:Saving checkpoints for 2932 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 20:00:33.849975 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2932 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 2982 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 20:20:55.160154 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 2982 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 3000 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
+I1206 20:28:20.532371 140565849311040 basic_session_run_hooks.py:606] Saving checkpoints for 3000 into /home/mleone2/ml_class_project/ProteinGAN/src/gan/../../weights/protein/our_data/sngan/gumbel/58x512_one_hot/non_saturating/batch_size=16/d_dim_30_g_dim_44/moh1_run_16_3000_step_k_3x3_d_1_conv/model.ckpt.
